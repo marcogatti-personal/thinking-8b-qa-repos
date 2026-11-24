@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thinking-8b-qa-repos"
+version = "0.5.1"
+description = "Bounded-memory, evidence-backed repository Q&A for small local models"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+thinking-8b-qa-repos = "thinking_8b_qa_repos.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["thinking_8b_qa_repos*"]
